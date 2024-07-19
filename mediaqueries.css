@@ -24,9 +24,10 @@
     .arrow {
         display: none;
     }
-    section, 
-    .section-container {
+    section, .section-container {
         height: fit-content;
+        margin-top: 2rem;
+        text-align: justify;
     }
     section {
         margin: 0 5%;
