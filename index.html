@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -27,21 +28,21 @@
                 <span></span>
                 <span></span>
             </div>
-            <ul class="menu-links"> 
+            <div class="menu-links"> 
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
+            </div>
         </div>
     </nav>
     <section id="profile">
-        <div>
-            <img src="./assets/Photo1.png" alt="Angelique Lewis profile picture"/>
+        <div class="section__pic-container">
+            <img src="./assets/Photo1.png" alt="Angelique Lewis profile picture" class="section__pic-container"/>
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hi, I'm</p>
-            <h1 class="section__text__p2">Angelique Lewis</h1>
+            <h1 class="title">Angelique Lewis</h1>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
                 <button
@@ -50,12 +51,13 @@
             Download CV</button>
             <button class="btn btn-color-1" onclick="location.href=('./#contact')">Contact Info</button>
         </div>
+        
         <div id="socials-container">
-            <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+            <img src="./assets/linkedin.png" alt="My LinkedIn"
             class="icon" onclick="location.href='https://linkedin.com/in/lewisangelique'"/>
         <img
         src="./assets/github.png"
-        alt="My Github profile"
+        alt="My Github"
         class="icon"
         onclick="location.href='https://github.com/AngeliqueLewis'"/>
     </div>
@@ -63,7 +65,7 @@
     </section>
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1><br />
+        <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/Photo3.png" 
@@ -72,7 +74,6 @@
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                
                 <div class="details-container">
                     <img src="./assets/education.png"
                     alt="Education Icon"
@@ -80,6 +81,12 @@
                     <h3>Education</h3>
                     <p>B.Sc. Bachelors Degree<br />Management Information Systems</p>
                 </div>
+                <div class="details-container">
+                    <img src="./assets/tennis.png"
+                    alt="Tennis Icon"
+                    class="icon"/>
+                    <h3>Fun Fact</h3>
+                    <p>I play tennis!<br /> & started my own tennis club!</p>
             </div>
                 <div class="text-container">
                     <p>
@@ -194,6 +201,24 @@
                             <p>Intermediate</p>
                         </div>
                         </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"/>
+                        <div>
+                            <h3>AWS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                            alt="Experience icon"
+                            class="icon"/>
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -270,7 +295,7 @@
         <img src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'"/>
+        onclick="location.href='./#contact'"/>
     </section>
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>

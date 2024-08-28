@@ -6,13 +6,12 @@
     .about-containers {
         flex-wrap: wrap;
     }
+    #contact,
+    #projects {
+        height: fit-content;
+    }
 }
-/*Img size adjustment*/
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
+
 
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -21,19 +20,21 @@ img {
     #hamburger-nav {
         display: flex;
     }
-    #experience, .experience-details-container {
+    #experience, 
+    .experience-details-container {
         margin-top: 2rem;
     }
-    #profile, .section-container {
+    #profile, 
+    .section-container {
         display: block;
     }
+    
     .arrow {
         display: none;
     }
-    section, .section-container {
+    section, 
+    .section-container {
         height: fit-content;
-        margin-top: 2rem;
-        text-align: justify;
     }
     section {
         margin: 0 5%;

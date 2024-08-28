@@ -58,6 +58,10 @@ a:hover {
     text-decoration-color: rgb( 181, 181, 181);
 }
 
+.logo {
+    font-size: 2rem;
+}
+
 .logo:hover {
     cursor: default;
 }
@@ -110,7 +114,7 @@ a:hover {
     transition: all 0.3 ease-in-out;
 }
 
-.menu-links {
+.menu-links li {
     list-style: none;
 }
 
@@ -185,6 +189,10 @@ section {
     text-align: center;
 }
 
+.section__text__p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -206,10 +214,8 @@ section {
 
 /* ICONS */
 .icon {
-    display: inline-block;
     cursor: pointer;
     height: 2rem;
-    vertical-align: middle;
 
 }
 
@@ -311,7 +317,7 @@ section {
 .section__pic-container {
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    margin: auto 0
 }
 
 /* EXPERIENCE SECTION */
